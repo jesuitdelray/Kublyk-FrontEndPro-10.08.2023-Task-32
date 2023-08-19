@@ -13,9 +13,9 @@ let currentImageIndex = 0
 
 imageElement.src = images[currentImageIndex]
 prevBtnEl.style.display = "none"
-updateButtonVisibility()
+updateBtn()
 
-function updateButtonVisibility() {
+function updateBtn() {
     if (currentImageIndex === 0) {
         prevBtnEl.style.display = "none"
     } else {
@@ -33,7 +33,7 @@ prevBtnEl.addEventListener("click", () => {
     if (currentImageIndex > 0) {
         currentImageIndex--
         imageElement.src = images[currentImageIndex]
-        updateButtonVisibility()
+        updateBtn()
     }
 })
 
@@ -41,6 +41,6 @@ nextBtnEl.addEventListener("click", () => {
     if (currentImageIndex < images.length - 1) {
         currentImageIndex++
         imageElement.src = images[currentImageIndex]
-        updateButtonVisibility()
+        updateBtn()
     }
 })

@@ -1,7 +1,8 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    width: 700px;
     gap: 10px;
 }
 
@@ -21,25 +22,22 @@
     display: block;
 }
 
-.btns {
-    display: flex;
-    gap: 10px;
-}
-
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(195, 255, 218);
-    width: 130px;
+    min-width: 50px;
+    max-width: 100px;
     height: 30px;
     cursor: pointer;
     border: none;
-    transition: 0.2s ease;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .btn:hover {
     background-color: white;
     color: #4CAF50;
-    box-shadow: 0 0 1px #4CAF50;
+    box-shadow: 0 0 2px #4CAF50;
 }
