@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.img {
+    max-width: fit-content;
+    height: 300px;
+    max-width: 400px;
+    border: 2px solid #4CAF50;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(195, 255, 218);
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #4CAF50;
+    box-shadow: 0 0 1px #4CAF50;
+}
